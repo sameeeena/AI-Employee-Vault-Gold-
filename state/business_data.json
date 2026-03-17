@@ -1,0 +1,12 @@
+{
+  "meetings": [],
+  "crm_activities": [],
+  "sales_pipeline": [],
+  "projects": [],
+  "contracts": [],
+  "cross_domain_flags": {
+    "accounting": [],
+    "personal": [],
+    "social_media": []
+  }
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "scheduled_20260310020914_ac42e3eb",
+    "message": "\ud83c\udf89 Testing the new content calendar feature! #Automation #SocialMedia",
+    "platforms": [
+      "facebook",
+      "instagram"
+    ],
+    "scheduled_time": "2026-03-11T10:00:00",
+    "image_url": null,
+    "link": "https://example.com",
+    "is_reel": false,
+    "status": "cancelled",
+    "hashtags": [
+      "#Trending",
+      "#Viral",
+      "#Explore"
+    ],
+    "template_id": null,
+    "created_at": "2026-03-10T02:09:14.114891",
+    "posted_at": null,
+    "post_ids": null
+  },
+  {
+    "id": "scheduled_20260310020914_a19463c8",
+    "message": "\ud83d\udcad Quick Question for You!\n\nWhat's your favorite productivity hack?\n\nDrop your answer in the comments! \ud83d\udc47\n\n#Community #Engagement",
+    "platforms": [
+      "facebook",
+      "instagram"
+    ],
+    "scheduled_time": "2026-03-11T14:00:00",
+    "image_url": null,
+    "link": null,
+    "is_reel": false,
+    "status": "pending",
+    "hashtags": [
+      "#Trending",
+      "#Viral",
+      "#Explore"
+    ],
+    "template_id": "template_engagement",
+    "created_at": "2026-03-10T02:09:14.117981",
+    "posted_at": null,
+    "post_ids": null
+  },
+  {
+    "id": "scheduled_20260310020915_2ac42a5d",
+    "message": "\u2728 Daily Inspiration \u2728\n\n\"The only way to do great work is to love what you do.\"\n\n- Steve Jobs\n\n#Motivation #Inspiration",
+    "platforms": [
+      "facebook",
+      "instagram"
+    ],
+    "scheduled_time": "2026-03-10T08:00:00",
+    "image_url": null,
+    "link": null,
+    "is_reel": false,
+    "status": "pending",
+    "hashtags": [
+      "#Trending",
+      "#Viral",
+      "#Explore"
+    ],
+    "template_id": "template_motivation",
+    "created_at": "2026-03-10T02:09:15.485316",
+    "posted_at": null,
+    "post_ids": null
+  }
+]

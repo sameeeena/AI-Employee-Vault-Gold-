@@ -1,0 +1,31 @@
+{
+  "server_name": "Business MCP Server",
+  "version": "1.0.0",
+  "domain": "Business",
+  "port": 8004,
+  "host": "0.0.0.0",
+  "description": "Business domain operations with full cross-domain integration",
+  "capabilities": [
+    "schedule_meeting",
+    "update_crm",
+    "update_sales_pipeline",
+    "flag_financial_task",
+    "flag_marketing_task"
+  ],
+  "cross_domain": {
+    "can_receive_from": [],
+    "can_trigger": ["Accounting", "Personal", "Social Media"],
+    "integration_endpoints": {
+      "Accounting": "flag_financial_task",
+      "Personal": "flag_personal_impact",
+      "Social Media": "flag_marketing_task"
+    }
+  },
+  "logging": {
+    "file": "logs/business_log.md",
+    "level": "INFO"
+  },
+  "data_storage": {
+    "file": "state/business_data.json"
+  }
+}

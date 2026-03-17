@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Facebook Token</title>
+    <style>
+        body { font-family: Arial; max-width: 700px; margin: 50px auto; padding: 20px; background: #f0f2f5; }
+        .card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #1877f2; }
+        .btn { display: inline-block; background: #1877f2; color: white; padding: 15px 30px; text-decoration: none; border-radius: 6px; margin: 10px 0; }
+        .btn:hover { background: #166fe5; }
+        .step { background: #f7f7f7; padding: 15px; margin: 15px 0; border-left: 4px solid #1877f2; }
+        .error { background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🔑 Facebook Token Generator</h1>
+        
+        <div class="error">
+            ⚠️ Current token mein <strong>pages_show_list</strong> permission nahi hai.
+            <br>Naya token generate karein.
+        </div>
+
+        <div class="step">
+            <h3>Step 1: Generate New Token</h3>
+            <p>Neeche diye gaye link pe click karein aur permissions approve karein:</p>
+            <a href="https://www.facebook.com/v19.0/dialog/oauth?client_id=1275203508084665&scope=pages_show_list,pages_read_engagement,pages_manage_posts&response_type=token&display=popup" target="_blank" class="btn">Get New Token</a>
+        </div>
+
+        <div class="step">
+            <h3>Step 2: Get Page Access Token</h3>
+            <p>Redirect hone ke baad:</p>
+            <ol>
+                <li>Graph API Explorer khulega</li>
+                <li>Query box mein likhein: <code>/me/accounts</code></li>
+                <li>Submit click karein</li>
+                <li>Response mein se <code>access_token</code> copy karein</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h3>Step 3: Update .env</h3>
+            <p>Copy kiya hua token .env file mein paste karein:</p>
+            <code>FACEBOOK_PAGE_ACCESS_TOKEN=YOUR_NEW_TOKEN</code>
+        </div>
+
+        <div class="step">
+            <h3>Step 4: Test</h3>
+            <p>Command prompt mein:</p>
+            <code>python test_facebook_connection.py</code>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            const open = confirm("Facebook Token generate karne ke liye link open karein?");
+            if (open) {
+                window.open("https://www.facebook.com/v19.0/dialog/oauth?client_id=1275203508084665&scope=pages_show_list,pages_read_engagement,pages_manage_posts&response_type=token&display=popup", "_blank");
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

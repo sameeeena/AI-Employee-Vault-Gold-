@@ -1,0 +1,243 @@
+[
+  {
+    "id": "template_announcement",
+    "name": "Company Announcement",
+    "category": "announcement",
+    "message_template": "\ud83d\udce2 {announcement_title}\n\n{announcement_details}\n\n#CompanyNews #Announcement",
+    "suggested_hashtags": [
+      "#CompanyNews",
+      "#Announcement",
+      "#Business",
+      "#Update"
+    ],
+    "best_posting_times": [
+      "09:00",
+      "13:00"
+    ],
+    "platforms": [
+      "facebook",
+      "instagram"
+    ],
+    "image_suggested": true
+  },
+  {
+    "id": "template_promotion",
+    "name": "Product/Service Promotion",
+    "category": "promotion",
+    "message_template": "\ud83c\udf89 Special Offer Alert!\n\n{product_name}: {offer_details}\n\n\u23f0 Valid until: {expiry_date}\n\ud83d\udc49 {call_to_action}\n\n#SpecialOffer #Promotion",
+    "suggested_hashtags": [
+      "#Sale",
+      "#Promotion",
+      "#SpecialOffer",
+      "#Deal",
+      "#Shopping"
+    ],
+    "best_posting_times": [
+      "10:00",
+      "15:00",
+      "19:00"
+    ],
+    "platforms": [
+      "facebook",
+      "instagram"
+    ],
+    "image_suggested": true
+  },
+  {
+    "id": "template_engagement",
+    "name": "Audience Engagement Question",
+    "category": "engagement",
+    "message_template": "\ud83d\udcad Quick Question for You!\n\n{engagement_question}\n\nDrop your answer in the comments! \ud83d\udc47\n\n#Community #Engagement",
+    "suggested_hashtags": [
+      "#Question",
+      "#Community",
+      "#Engagement",
+      "#Discussion",
+      "#Feedback"
+    ],
+    "best_posting_times": [
+      "12:00",
+      "18:00",
+      "20:00"
+    ],
+    "platforms": [
+      "facebook",
+      "instagram"
+    ],
+    "image_suggested": false
+  },
+  {
+    "id": "template_educational",
+    "name": "Educational/Tip Post",
+    "category": "educational",
+    "message_template": "\ud83d\udca1 Pro Tip: {tip_title}\n\n{tip_content}\n\nSave this for later! \ud83d\udd16\n\n#Tips #Education",
+    "suggested_hashtags": [
+      "#Tips",
+      "#Education",
+      "#Learning",
+      "#HowTo",
+      "#Advice",
+      "#Knowledge"
+    ],
+    "best_posting_times": [
+      "08:00",
+      "14:00"
+    ],
+    "platforms": [
+      "facebook",
+      "instagram"
+    ],
+    "image_suggested": true
+  },
+  {
+    "id": "template_behind_scenes",
+    "name": "Behind the Scenes",
+    "category": "behind_scenes",
+    "message_template": "\ud83c\udfac Behind the Scenes at {company_name}!\n\n{behind_scenes_content}\n\n#BehindTheScenes #TeamLife",
+    "suggested_hashtags": [
+      "#BehindTheScenes",
+      "#TeamLife",
+      "#CompanyCulture",
+      "#WorkLife",
+      "#Office"
+    ],
+    "best_posting_times": [
+      "11:00",
+      "17:00"
+    ],
+    "platforms": [
+      "facebook",
+      "instagram"
+    ],
+    "image_suggested": true
+  },
+  {
+    "id": "template_testimonial",
+    "name": "Customer Testimonial",
+    "category": "testimonial",
+    "message_template": "\u2b50 Customer Love!\n\n\"{testimonial_text}\"\n\n- {customer_name}\n\nThank you for your trust! \ud83d\ude4f\n\n#Testimonial #CustomerReview",
+    "suggested_hashtags": [
+      "#Testimonial",
+      "#Review",
+      "#CustomerLove",
+      "#Feedback",
+      "#Happy"
+    ],
+    "best_posting_times": [
+      "10:00",
+      "16:00"
+    ],
+    "platforms": [
+      "facebook",
+      "instagram"
+    ],
+    "image_suggested": true
+  },
+  {
+    "id": "template_event",
+    "name": "Event Announcement",
+    "category": "event",
+    "message_template": "\ud83d\udcc5 You're Invited!\n\nEvent: {event_name}\n\ud83d\uddd3\ufe0f Date: {event_date}\n\u23f0 Time: {event_time}\n\ud83d\udccd Location: {event_location}\n\n{event_details}\n\nRSVP: {rsvp_link}\n\n#Event #Invitation",
+    "suggested_hashtags": [
+      "#Event",
+      "#Invitation",
+      "#SaveTheDate",
+      "#ComingSoon"
+    ],
+    "best_posting_times": [
+      "09:00",
+      "18:00"
+    ],
+    "platforms": [
+      "facebook",
+      "instagram"
+    ],
+    "image_suggested": true
+  },
+  {
+    "id": "template_motivation",
+    "name": "Motivational Quote",
+    "category": "motivation",
+    "message_template": "\u2728 Daily Inspiration \u2728\n\n\"{motivational_quote}\"\n\n- {quote_author}\n\n#Motivation #Inspiration",
+    "suggested_hashtags": [
+      "#Motivation",
+      "#Inspiration",
+      "#Quote",
+      "#DailyMotivation",
+      "#Success"
+    ],
+    "best_posting_times": [
+      "07:00",
+      "08:00",
+      "20:00"
+    ],
+    "platforms": [
+      "facebook",
+      "instagram"
+    ],
+    "image_suggested": true
+  },
+  {
+    "id": "template_product_launch",
+    "name": "Product Launch",
+    "category": "launch",
+    "message_template": "\ud83d\ude80 BIG NEWS! Introducing {product_name}!\n\n{product_description}\n\nKey Features:\n\u2728 {feature_1}\n\u2728 {feature_2}\n\u2728 {feature_3}\n\nLearn more: {product_link}\n\n#ProductLaunch #New",
+    "suggested_hashtags": [
+      "#ProductLaunch",
+      "#New",
+      "#Innovation",
+      "#Launch",
+      "#Exciting"
+    ],
+    "best_posting_times": [
+      "09:00",
+      "12:00"
+    ],
+    "platforms": [
+      "facebook",
+      "instagram"
+    ],
+    "image_suggested": true
+  },
+  {
+    "id": "template_friday_fun",
+    "name": "Friday Fun Post",
+    "category": "engagement",
+    "message_template": "\ud83c\udf89 It's Friday!\n\n{friday_content}\n\nWhat are your weekend plans? Tell us below! \ud83d\udc47\n\n#Friday #Weekend",
+    "suggested_hashtags": [
+      "#Friday",
+      "#Weekend",
+      "#FridayFeeling",
+      "#TGIF",
+      "#WeekendVibes"
+    ],
+    "best_posting_times": [
+      "15:00",
+      "17:00"
+    ],
+    "platforms": [
+      "facebook",
+      "instagram"
+    ],
+    "image_suggested": false
+  },
+  {
+    "name": "Custom Welcome Post",
+    "category": "engagement",
+    "message_template": "\ud83d\udc4b Welcome {new_member_name} to our community!",
+    "suggested_hashtags": [
+      "#Welcome",
+      "#NewMember",
+      "#Community"
+    ],
+    "best_posting_times": [
+      "10:00",
+      "15:00"
+    ],
+    "platforms": [
+      "facebook",
+      "instagram"
+    ],
+    "id": "custom_9945dc10"
+  }
+]

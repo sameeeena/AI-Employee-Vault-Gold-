@@ -1,0 +1,120 @@
+{
+  "version": "2.0.0",
+  "last_updated": "2026-03-10T12:00:00",
+  "description": "MCP Orchestrator Configuration - Multi-Domain Server Management",
+  "servers": [
+    {
+      "domain": "Accounting",
+      "file": "accounting_mcp_server.py",
+      "port": 8001,
+      "url": "http://localhost:8001",
+      "tools": [
+        "create_invoice",
+        "record_expense",
+        "generate_report",
+        "process_payment",
+        "get_account_balance",
+        "reconcile_transaction"
+      ],
+      "required": true,
+      "health_endpoint": "/health",
+      "api_prefix": "/api"
+    },
+    {
+      "domain": "Social Media",
+      "file": "social_mcp_server_v2.py",
+      "port": 8002,
+      "url": "http://localhost:8002",
+      "tools": [
+        "post_message",
+        "get_metrics",
+        "generate_summary",
+        "schedule_post",
+        "get_content_calendar"
+      ],
+      "required": true,
+      "health_endpoint": "/health",
+      "api_prefix": "/api"
+    },
+    {
+      "domain": "Personal",
+      "file": "personal_mcp_server.py",
+      "port": 8003,
+      "url": "http://localhost:8003",
+      "tools": [
+        "schedule_appointment",
+        "set_reminder",
+        "plan_travel",
+        "create_personal_task",
+        "get_calendar"
+      ],
+      "required": true,
+      "health_endpoint": "/health",
+      "api_prefix": "/api"
+    },
+    {
+      "domain": "Business",
+      "file": "business_mcp_server.py",
+      "port": 8004,
+      "url": "http://localhost:8004",
+      "tools": [
+        "schedule_meeting",
+        "update_crm",
+        "update_sales_pipeline",
+        "create_project",
+        "manage_contract",
+        "flag_financial_task",
+        "flag_marketing_task"
+      ],
+      "required": true,
+      "health_endpoint": "/health",
+      "api_prefix": "/api"
+    }
+  ],
+  "routing_table": {
+    "invoice": "Accounting",
+    "expense": "Accounting",
+    "payment": "Accounting",
+    "financial_report": "Accounting",
+    "tax": "Accounting",
+    "accounting": "Accounting",
+    "post": "Social Media",
+    "social_media": "Social Media",
+    "facebook": "Social Media",
+    "instagram": "Social Media",
+    "twitter": "Social Media",
+    "linkedin": "Social Media",
+    "engagement": "Social Media",
+    "appointment": "Personal",
+    "reminder": "Personal",
+    "travel": "Personal",
+    "personal_task": "Personal",
+    "calendar": "Personal",
+    "meeting": "Business",
+    "crm": "Business",
+    "sales": "Business",
+    "project": "Business",
+    "contract": "Business",
+    "client": "Business",
+    "business": "Business"
+  },
+  "orchestrator": {
+    "port": 8000,
+    "enable_load_balancing": true,
+    "enable_failover": true,
+    "health_check_interval": 30,
+    "max_retries": 3,
+    "timeout_seconds": 30
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/mcp_orchestrator_log.md",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  },
+  "monitoring": {
+    "enable_metrics": true,
+    "metrics_file": "logs/mcp_metrics.json",
+    "track_request_count": true,
+    "track_response_time": true
+  }
+}

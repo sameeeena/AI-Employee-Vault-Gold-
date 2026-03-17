@@ -1,0 +1,31 @@
+{
+  "server_name": "Personal MCP Server",
+  "version": "1.0.0",
+  "domain": "Personal",
+  "port": 8003,
+  "host": "0.0.0.0",
+  "description": "Personal domain operations with cross-domain integration",
+  "capabilities": [
+    "create_appointment",
+    "create_reminder",
+    "create_travel_plan",
+    "track_personal_expense",
+    "send_personal_message",
+    "flag_personal_impact"
+  ],
+  "cross_domain": {
+    "can_receive_from": ["Business"],
+    "can_trigger": ["Accounting"],
+    "integration_endpoints": {
+      "Business": "flag_personal_impact",
+      "Accounting": "track_personal_expense"
+    }
+  },
+  "logging": {
+    "file": "logs/personal_log.md",
+    "level": "INFO"
+  },
+  "data_storage": {
+    "file": "state/personal_data.json"
+  }
+}

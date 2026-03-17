@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook App Domain Fix</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; background: #f0f2f5; }
+        .card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin: 20px 0; }
+        h1 { color: #1877f2; }
+        h2 { color: #1c1e21; border-bottom: 2px solid #1877f2; padding-bottom: 10px; }
+        .step { background: #f7f7f7; padding: 15px; margin: 15px 0; border-left: 4px solid #1877f2; }
+        .code { background: #282c34; color: #abb2bf; padding: 10px; border-radius: 4px; font-family: monospace; }
+        .btn { display: inline-block; background: #1877f2; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; margin: 10px 5px; }
+        .btn:hover { background: #166fe5; }
+        .warning { background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .success { background: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        ul { line-height: 1.8; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🔧 Facebook App Domain Fix</h1>
+        
+        <div class="warning">
+            <strong>⚠️ Error:</strong> The domain of this URL isn't included in the app's domains.
+        </div>
+
+        <h2>📋 Solution - 2 Methods</h2>
+
+        <div class="step">
+            <h3>Method 1: Add App Domains (Recommended)</h3>
+            
+            <p><strong>Step 1:</strong> Open Facebook App Dashboard</p>
+            <a href="https://developers.facebook.com/apps/1275203508084665/settings/basic/" target="_blank" class="btn">Open App Dashboard</a>
+            
+            <p><strong>Step 2:</strong> Find "App Domains" field</p>
+            <p><strong>Step 3:</strong> Add these domains (comma-separated):</p>
+            <div class="code">localhost, facebook.com, developers.facebook.com</div>
+            
+            <p><strong>Step 4:</strong> Click "Save Changes"</p>
+            
+            <p><strong>Step 5:</strong> Wait 5 minutes for changes to apply</p>
+        </div>
+
+        <div class="step">
+            <h3>Method 2: Add Valid OAuth Redirect URIs</h3>
+            
+            <p><strong>Step 1:</strong> Go to Facebook Login Settings</p>
+            <a href="https://developers.facebook.com/apps/1275203508084665/facebook-login/quickstart/" target="_blank" class="btn">Open Login Settings</a>
+            
+            <p><strong>Step 2:</strong> Add Valid OAuth Redirect URIs:</p>
+            <div class="code">https://developers.facebook.com/tools/explorer
+https://localhost
+http://localhost:8000</div>
+            
+            <p><strong>Step 3:</strong> Save Changes</p>
+        </div>
+
+        <div class="step">
+            <h3>Method 3: Direct Token Link (Quick Fix)</h3>
+            
+            <p>Agar settings mein problem ho, toh direct link use karein:</p>
+            <a href="https://www.facebook.com/v19.0/dialog/oauth?client_id=1275203508084665&scope=pages_manage_posts,pages_read_engagement,pages_show_list&response_type=token&display=page" target="_blank" class="btn">Get Token Direct</a>
+            
+            <p><strong>Steps:</strong></p>
+            <ol>
+                <li>Upar diye gaye link pe click karein</li>
+                <li>Facebook login karein</li>
+                <li>Permissions approve karein</li>
+                <li>Redirect hoga Graph API Explorer pe</li>
+                <li>Query box mein likhein: <code>/me/accounts</code></li>
+                <li>Submit click karein</li>
+                <li>Response mein se <code>access_token</code> copy karein</li>
+            </ol>
+        </div>
+
+        <h2>✅ After Fixing</h2>
+        
+        <div class="success">
+            <p><strong>Test karein:</strong></p>
+            <div class="code">python test_facebook_connection.py</div>
+            
+            <p><strong>Phir token generate karein:</strong></p>
+            <div class="code">python get_facebook_token.py</div>
+        </div>
+
+        <h2>📸 Screenshots Guide</h2>
+        
+        <p><strong>App Dashboard pe kahan jana hai:</strong></p>
+        <ul>
+            <li>Settings → Basic</li>
+            <li>"App Domains" field dhundhein</li>
+            <li>Comma-separated values daalein</li>
+        </ul>
+
+        <p><strong>OAuth Redirect URIs:</strong></p>
+        <ul>
+            <li>Facebook Login → Settings</li>
+            <li>"Valid OAuth Redirect URIs" section</li>
+            <li>URIs add karein aur save karein</li>
+        </ul>
+    </div>
+
+    <script>
+        // Auto-open dashboard after 2 seconds
+        setTimeout(() => {
+            const openDash = confirm("Facebook App Dashboard open karein?");
+            if (openDash) {
+                window.open("https://developers.facebook.com/apps/1275203508084665/settings/basic/", "_blank");
+            }
+        }, 2000);
+    </script>
+</body>
+</html>

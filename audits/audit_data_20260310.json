@@ -1,0 +1,89 @@
+{
+  "timestamp": "2026-03-10T04:07:23.771818",
+  "week_start": "2026-03-09T04:07:23.771847",
+  "week_end": "2026-03-10T04:07:23.771854",
+  "business_metrics": {
+    "meetings": {
+      "total": 0,
+      "scheduled": 0,
+      "completed": 0
+    },
+    "crm": {
+      "active_clients": 0,
+      "new_leads": 0,
+      "conversion_rate": 0
+    },
+    "sales": {
+      "total_deals": 0,
+      "pipeline_value": 0,
+      "closed_this_week": 0,
+      "by_stage": {}
+    },
+    "projects": {
+      "active_projects": 0,
+      "completed_projects": 0,
+      "on_time_rate": 0
+    }
+  },
+  "accounting_metrics": {
+    "revenue": {
+      "this_week": 0,
+      "mtd": 0,
+      "growth": 0
+    },
+    "expenses": {
+      "this_week": 0,
+      "mtd": 0,
+      "by_category": {}
+    },
+    "profit": {
+      "gross": 0,
+      "net": 0,
+      "margin": 0
+    },
+    "invoices": {
+      "issued": 0,
+      "paid": 0,
+      "overdue": 0,
+      "outstanding_amount": 0
+    }
+  },
+  "social_metrics": {
+    "facebook": {
+      "posts": 0,
+      "engagement": 0,
+      "reach": 0
+    },
+    "instagram": {
+      "posts": 0,
+      "likes": 0,
+      "followers_growth": 0
+    },
+    "linkedin": {
+      "posts": 0,
+      "impressions": 0,
+      "engagement_rate": 0
+    }
+  },
+  "personal_metrics": {},
+  "kpis": {
+    "Pipeline Value": "$0",
+    "Total Deals": "0",
+    "Meetings Held": "0",
+    "Weekly Revenue": "$0",
+    "Overdue Invoices": "0",
+    "FB Engagement": "0"
+  },
+  "alerts": [
+    "\u26a0\ufe0f Sales pipeline value is below target ($10,000)",
+    "\u26a0\ufe0f No Facebook posts this week"
+  ],
+  "recommendations": [
+    {
+      "title": "Increase Social Media Activity",
+      "priority": "Medium",
+      "action": "Post at least 3-4 times per week on Facebook",
+      "impact": "Improve brand visibility and engagement"
+    }
+  ]
+}
